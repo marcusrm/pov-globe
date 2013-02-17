@@ -1,0 +1,5 @@
+1) Get accurate timings
+   Mount Photo diode
+2) Better power supply?
+3) Get SD card
+4) Build a mount for LEDs and Raspberry PI
