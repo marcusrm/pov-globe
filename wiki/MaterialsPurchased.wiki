@@ -5,3 +5,6 @@
 || 4 Springs    || 6.43  || Jamie     ||
 || Bucket       || $11 ? || RJ        ||
 || PVC          ||  ?    || RJ        ||
+|| JB Weld      || $6    || Kyle      ||
+|| 8" Rod       || $0.50 || Kyle      ||
+|| 4 Nuts       || $0.50 || Kyle      ||
