@@ -1,5 +1,1 @@
-The LED strip that we purchased can be found at the following link
-
-http://learn.adafruit.com/digital-led-strip/code
-
 Example library for Arduino https://github.com/adafruit/Adafruit_NeoPixel
