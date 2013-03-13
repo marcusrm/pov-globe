@@ -1,0 +1,7 @@
+WiringPi: Period 152 ns. Frequency 6.579
+
+{{{
+for(;;);
+  digitalWrite(clockpin,1);
+  digitalWrite(clockpin,0);
+}}}
