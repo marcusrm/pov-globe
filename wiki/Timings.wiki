@@ -9,7 +9,7 @@ for(;;);
 GPIO_CLOCK : Period 208 ns. Frequency 4.8 MHz
 
 {{{
-  pinMode(clockpin,GPIO_CLOCK);                                                     |
-  gpioClockSet(clockpin,freq);                                                      |
+  pinMode(clockpin,GPIO_CLOCK);                                                     
+  gpioClockSet(clockpin,freq);                                                      
   while(1);
 }}}
