@@ -1,4 +1,4 @@
-WiringPi: Period 152 ns. Frequency 6.579
+WiringPi : Period 152 ns. Frequency 6.579
 
 {{{
 for(;;);
