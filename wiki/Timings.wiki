@@ -16,7 +16,9 @@ GPIO_CLOCK : Period 208 ns. Frequency 4.8 MHz
 
 
 Sphere spinning speed:
+{{{
 Power source: 19V, 4.74A.
 51.419 seconds/ 500 cycles
 frequency: 9.71Hz ~10Hz.
 We might be able to do better by using better power supply.
+}}}
