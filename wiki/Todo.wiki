@@ -1,7 +1,5 @@
 {{{
 1) Get accurate timings
-   Mount Photo diode
 2) Better power supply?
-3) Build a mount for LEDs and Raspberry PI
-4) Get LED strip?    Purchased. $44.45 for 1 Meter.http://adafruit.com/products/1138
-}}}
+3) Write code to properly display images to sphere based on timings.
+4) Mount additional LEDs?
