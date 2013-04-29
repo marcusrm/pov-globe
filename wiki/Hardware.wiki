@@ -1,0 +1,24 @@
+#summary An explanation of the hardware and circuitry used in the POV sphere.
+
+= Introduction =
+
+A POV sphere consists of two very basic sections - the part that spins and the part that remains static. The goal set up by the group was to design the sphere such that all elements are within the spinning party. The motor, microcontroller, and all circuit elements spin with the ring. To do this, a number of obstacles needed to be overcome.
+
+
+= Details =
+
+The hardware needed to accomplish 3 main objectives:
+  * Spin the ring at a rate that is capable of achieving persistence of vision.
+  * Be able to read the actual rate that the ring is spinning.
+  * Light up a set of LEDs in such a manner as to create a persistence of vision image.
+
+To accomplish this, first a method of powering the inner section of the sphere needed to be established. While a number of ideas were suggested, the final design had a motor inside of a PVC tube. Holes were drilled out of the tube and the motors wires were fed through the holes. Two copper rings were wrapped around the tube and the wires that were fed through the holes were soldered to the copper rings. These copper rings are to maintain contact with a set of copper brushes. These brushes would be the source of voltage and ground for the entire project. This design allowed the voltage source to maintain regular contact with the copper rings, and thus, supply consistent power to the motor, as well as the rest of the project.
+
+Once the motor was fitted inside this tube, the next step was to build the actual ring and attach it to the motor. The ring was made out of the lid of a plastic bucket. This gave the size and stability that would satisfy the project requirements. The ring was screwed onto the motor's tube. Next the motor was glued into a piece of plastic that was then screwed down to the base. This laid the foundation for the rest of the project. At this point, the motor was able to spin the ring when put into contact with a voltage source.
+
+
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
