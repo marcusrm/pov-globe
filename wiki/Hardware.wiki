@@ -18,11 +18,11 @@ The system has several main components:
   * The hall effect sensor w/ positive & negative magnets
   * LED strip
   * Capacitor for current smoothing
-  * Heat sink for voltage control
+  * Voltage Regulator w/ Heat sink
 
 The voltage is supplied through brush power by the motor. The voltage is used to power all of the components in the system. The brush power does not provide constant power and will often cut out for microseconds. To accommodate this, a capacitor is used to supply power to the Arduino and LED strip when the brush power is not connected. 
 
-A heat sink is also used in order to ensure that the Arduino does not receive more than 12 V.
+A voltage regulator w/ heat sink is also used in order to ensure that the Arduino does not receive more than 12 V.
 
 The Arduino is directly connected to the LED strip and hall effect sensor. It uses information from the hall effect sensor to manage when to send information to the LED strip.
 
@@ -34,7 +34,7 @@ An overhead beam is attached to the top of the ring with a rod to stop the ring 
 
 http://i.imgur.com/pPhstvah.jpg
 
-== Capacitor & Heat Sink ==
+== Capacitor & Voltage Regulator ==
 
 http://i.imgur.com/7si6P0vh.jpg
 
@@ -58,7 +58,7 @@ This was the first issue that we encountered during this design. The current des
 
 The next stage was to add a microcontroller. The microcontroller chosen for this project was a Arduino Uno. The Uno was attached to platform that has two PCB boards. The platform was attached to the ring section. This brought up the next issue for the design. Due to the method that power is delivered to the system, there are often instants in which the copper brushes are not in contact with the copper rings. In these instants, the system is not powered. This meant that the Uno was reset midway through a rotation. To solve this, a capacitor was added in parallel with the voltage source for current smoothing. In the instants that the voltage source is not connected to the system, the capacitor discharges are provides the necessary power.
 
-The next issue that we faced was the Uno would shut off unexpectedly after several seconds. After some debugging, it was found that the Uno was receiving about 22 V, far beyond the 6-12 V suggested input. To solve this, a heat sink was added in series to decrease the voltage delivered to the Uno.
+The next issue that we faced was the Uno would shut off unexpectedly after several seconds. After some debugging, it was found that the Uno was receiving about 22 V, far beyond the 6-12 V suggested input. To solve this, a voltage regulator was added in series to decrease the voltage delivered to the Uno. Because the voltage regulator would get very hot, a heat sink was put behind it.
 
 Next, we needed a way to identify when the ring has completed a rotation. A hall effect sensor was used for this. A hall effect sensor uses magnetic fields. It identifies a change from a positive magnet to a negative magnet. Two screws were put into the beam that was attached to the overhead beam and they were each magnetized. One screw was magnetized to positive and one to negative. When the ring spins, the hall effect sensor passes by the positive magnet and then goes by the negative magnet immediately after. When the hall effect sensor has read both the positive and negative magnets, a rotation has been completed.
 
